@@ -33,6 +33,6 @@ export default class ProductListing{
       return list.filter((product) => this.targetIDs.includes(product.Id));
   }
     renderList(list) {
-      renderListWithTemplate(productCardTemplate, this.listElement, list, "afterbegin", true);
+      renderListWithTemplate(productCardTemplate, this.listElement, list);
       }
 }
